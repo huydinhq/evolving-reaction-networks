@@ -54,7 +54,7 @@ public class Evolver implements Serializable {
 	private FitnessDisplayer fitnessDisplayer;
 	private transient String resultDirectory;
 
-	private static final int DEFAULT_POP_SIZE = 50;
+	private static final int DEFAULT_POP_SIZE = 500;
 	private static final int MAX_GENERATIONS = 200;
 	private static final Mutator DEFAULT_MUTATOR = new Mutator(new ArrayList<MutationRule>(Arrays.asList(new MutationRule[] {
 			new DisableTemplate(1), new MutateParameter(90), new AddNode(2), new AddActivation(2), new AddInhibition(5) })));
